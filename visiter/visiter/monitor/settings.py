@@ -6,7 +6,7 @@
 
 '''
     TIMEINTERVAL        刷新时间间隔，单位毫秒
-    POINTINTERVAL       图上各点之间间隔，越大则表示点越密集
+    POINTINTERVAL       图上各点之间间隔，越小则表示点越密集
     POINTLENGTH         图上点的数量，越大则表示图上时间跨度越长
     STATS_KEYS          图上显示的stats_key
     REDIS_HOST          redis地址
