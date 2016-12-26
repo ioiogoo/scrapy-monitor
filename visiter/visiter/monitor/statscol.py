@@ -35,7 +35,7 @@ class StatcollectorMiddleware(object):
 class SpiderRunStatspipeline(object):
     def open_spider(self, spider):
         r.set('spider_is_run', 1)
-        yield requests.get('http://127.0.0.1:5000/signal?sign=running')
+        requests.get('http://127.0.0.1:5000/signal?sign=running')
 
     def close_spider(self, spider):
         r.set('spider_is_run', 0)
