@@ -3,6 +3,9 @@
 
 使用了Flask开启web服务，将实时状态保存在redis数据库中
 
+# 效果展示
+![](https://github.com/ioiogoo/scrapy-monitor/blob/master/爬虫监控.jpg)
+
 # 项目依赖
 * scrapy
 * redis数据库
@@ -46,5 +49,3 @@
 ajax实时请求当前状态信息，flask从redis中取出需要的信息，用Echart渲染出图片。
 图片可放大查看局部信息，可保存当前监控信息。
 
-# 效果展示
-![](https://github.com/ioiogoo/scrapy-monitor/blob/master/爬虫监控.jpg)
