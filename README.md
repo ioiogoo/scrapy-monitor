@@ -6,6 +6,12 @@
 # 效果展示
 ![](https://github.com/ioiogoo/scrapy-monitor/blob/master/爬虫监控.jpg)
 
+* 数据实时更新，可设置时间间隔
+* 图表可下载保存
+* 图表放大至局部
+* 监控数据类型可控
+* 监控时间范围可控
+
 # 项目依赖
 * scrapy
 * redis数据库
