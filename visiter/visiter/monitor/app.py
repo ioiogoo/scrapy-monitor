@@ -19,7 +19,7 @@ def index():
 @app.route('/ajax')
 def ajax():
     key = request.args.get('key')
-    result = current_app.r.lrange(key, 0, POINTLENGTH)[::POINTINTERVAL]
+    result = current_app.r.lrange(key, -POINTLENGTH, -1)[::POINTINTERVAL]
     if not current_app.spider_is_run:
         # spider is closed
         return json.dumps(result).replace('"', ''), 404
